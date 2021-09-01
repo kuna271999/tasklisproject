@@ -1,0 +1,40 @@
+
+<div id="addtasktable">
+<table class="tab1">
+                                <h3>Add tasks here!!</h3><br/>
+                                
+                        
+                        <tr>
+                            <td id="r">Task Name</td>
+                            <td>{{input type="text" placeholder="Please enter taskname" value = taskname id="n"}}</td>
+                        </tr>      <br/>                
+                        <tr>
+                            <td id="r">Task Description</td>
+                            <td>{{textarea value=taskdescription cols="80" rows="6"}}</td>
+                        </tr><br/>
+						<tr>
+                            <td id="r">Task Estimatedtime</td>
+                            <td>{{input type="text" placeholder="Please enter estimated time" value = taskestitime}}</td>
+                        </tr><br/>
+						<tr>
+                            <td id="r">Task type</td>
+                            <td><select id="tasktype"> <option value="new">New</option>   <option value="enhancement">Enhancement</option>    <option value="trivial">Trivial</option></select></td>
+                        </tr><br/>
+                        <tr>
+							<td id="r">To assign tasks</td>
+                            <td>&nbsp;&nbsp;<button {{action "assignto"}} id="but1">Assign to</button></td>
+                        </tr><br/>
+						<tr>
+							<td></td>
+							<td><div id="assignuser"></div></td>
+						</tr>
+                        <tr>
+						<td><button {{action "createtask"}} id="dow">createtask</button></td>
+						<td><button {{action "autoassign"}} id="but">Auto assign</button></td>
+						<td>{{#link-to "tasklist"}}Tasks{{/link-to}}</td>
+						
+                        </tr>
+                        <br/>
+                        </table>
+</div>
+<div id="logoutadd"><button {{action "logout"}} id="dow1">Logout</button></div>
