@@ -1,0 +1,26 @@
+
+<div id="createtable">
+                        <table class="tab">
+                                <h3>Create an account here!</h3><br/>
+                                
+                         <tr>
+                            <td id="r">Name</td>
+                            <td>{{input type ="text"  placeholder = "Please enter firstname" value = createname}}</td>
+                        </tr>  <br/>
+                        <tr>
+                            <td id="r">Username</td>
+                            <td>{{input type ="text"  placeholder = "Please enter firstname" value = createusername}}</td>
+                        </tr>       <br/>               
+                        <tr>
+                            <td id="r">Password</td>
+                            <td>{{input type ="password" placeholder ="Please enter password" value = createpassword}}</td>
+                        </tr>
+                        <br/>
+                        <tr>
+                            <button {{action "signup"}} id="dow">Sign Up</button>
+							<td>{{#link-to "application"}}HOME{{/link-to}}</td>
+                            
+                        </tr>
+                        <br/>
+                        </table>
+</div>
