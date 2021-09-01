@@ -1,0 +1,13 @@
+
+<div class="taskwhole">
+<div id="welcome"></div>
+<div id="link">{{#link-to "addtask"}}AddTasks{{/link-to}}</div>
+<h3 class="h3">To view the tasks assigned to you</h3>
+<div class="viewt"></div><div id="sel"><select id="selectmethod" onchange={{action "report"}}> <option value="all">All</option>   <option value="nottaken">Not taken</option>    <option value="completed">Completed</option></select>&nbsp;&nbsp;&nbsp;<button {{action "viewtask"}} id="but">Viewtask</button></div>
+<div id="tasktable">
+</div>
+<div id="updatebutton"><button {{action "selection"}} id="but">update</button></div>
+</div>
+<div id="logouttask"><button {{action "logout"}} id="dow1">Logout</button></div>
+
+
